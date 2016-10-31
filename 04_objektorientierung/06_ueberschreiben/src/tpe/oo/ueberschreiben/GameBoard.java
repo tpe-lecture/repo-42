@@ -15,6 +15,9 @@ public class GameBoard extends Board {
 
     /** Alien, das durch das Bild läuft. */
     private Alien alien;
+    private Alien alien1;
+    private Alien alien2;
+
 
     /**
      * Erzeugt ein neues Board.
@@ -25,9 +28,14 @@ public class GameBoard extends Board {
 
         // Alien initialisieren
         alien = new Alien(this, new Point(400, 50 + new Random().nextInt(100)));
+        alien1 = new Alien(this, new Point(400, 1+ new Random().nextInt(100)));
+        alien2 = new Alien(this, new Point(400, 20 + new Random().nextInt(100)));
 
         // Alien soll auf Maus-Klicks reagieren
         addMouseListener(alien);
+        addMouseListener(alien1);
+        addMouseListener(alien2);
+
     }
 
     /**
@@ -37,6 +45,9 @@ public class GameBoard extends Board {
     public void drawGame(Graphics g) {
         // Alien zeichnen
         alien.draw(g, this);
+        alien1.draw(g, this);
+        alien2.draw(g, this);
+
     }
 
     /**
@@ -45,6 +56,10 @@ public class GameBoard extends Board {
     @Override
     public boolean updateGame() {
         alien.move();
+        alien1.move();
+        alien2.move();
+        
         return alien.isVisible();
+
     }
 }
