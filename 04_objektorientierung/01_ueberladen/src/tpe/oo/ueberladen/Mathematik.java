@@ -5,7 +5,7 @@ package tpe.oo.ueberladen;
  */
 public final class Mathematik {
 
-    /**
+     /**
      * Konstruktor.
      */
     private Mathematik() {
