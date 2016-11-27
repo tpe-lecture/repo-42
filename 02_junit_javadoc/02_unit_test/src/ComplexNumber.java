@@ -12,7 +12,7 @@
  * Die Klasse erlaubt es, komplexe Zahlen zu addieren, subtrahieren,
  * multiplizieren und zu dividieren. Weiterhin kann auch noch der
  * Betrag bestimmt werden.
- *  <p>
+ *   <p>
  * Objekte dieser Klasse sind immutable. Die Methoden verändern den Zustand des
  * Objektes nicht sondern geben ein neues Objekt zurück.
  *
