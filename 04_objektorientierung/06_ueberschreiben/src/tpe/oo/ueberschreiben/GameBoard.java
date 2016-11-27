@@ -27,9 +27,9 @@ public class GameBoard extends Board {
         super(10, new Dimension(400, 400), Color.BLACK);
 
         // Alien initialisieren
-        alien = new Alien(this, new Point(400, 50 + new Random().nextInt(100)));
-        alien1 = new Alien(this, new Point(400, 1+ new Random().nextInt(100)));
-        alien2 = new Alien(this, new Point(400, 20 + new Random().nextInt(100)));
+        alien = new Alien(this, new Point(400, 200 + new Random().nextInt(100)));
+        alien1 = new Alien(this, new Point(400, 15+ new Random().nextInt(10)));
+        alien2 = new Alien(this, new Point(200, 100 + new Random().nextInt(100)));
 
         // Alien soll auf Maus-Klicks reagieren
         addMouseListener(alien);
