@@ -24,7 +24,7 @@ public class CodingStandard {
     }
 
     /**
-     * Methode, die etwas tut.
+     *  Methode, die etwas tut.
      * @param parameter Eingabewert für die Methode.
      * @return gibt einen Wert abhängig von {@code parameter} zurück.
      */

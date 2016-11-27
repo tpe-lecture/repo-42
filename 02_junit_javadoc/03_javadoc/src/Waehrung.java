@@ -13,7 +13,7 @@ public class Waehrung {
 
     /**
      * deklaration von der Name der Währung
-     * die nach der initialisierung nicht mehr verändert werden kann
+     * die  nach der initialisierung nicht mehr verändert werden kann
      * und ist nur für diese klasse sichtbar.
      */
     private final String name;

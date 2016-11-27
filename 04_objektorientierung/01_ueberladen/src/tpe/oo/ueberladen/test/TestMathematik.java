@@ -12,11 +12,11 @@ import static org.junit.Assert.assertEquals;
 public class TestMathematik {
 
     /**
-     * Testet die max-Methode.
+     *  Testet die max-Methode.
      */
     @Test
     public void testMax() {
-        
+
         assertEquals(5, max(1, 5));
         assertEquals(1, max(1, -5));
         assertEquals(-1, max(-1, -5));
@@ -26,6 +26,6 @@ public class TestMathematik {
         assertEquals(9, max(1, 5, 9));
         assertEquals(3, max(-1, -5, -9, 3));
         assertEquals(9, max(1, 5, 9, 3));
-        
+
     }
 }

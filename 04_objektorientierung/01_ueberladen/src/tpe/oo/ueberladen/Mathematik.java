@@ -11,7 +11,7 @@ public final class Mathematik {
     private Mathematik() {
     }
     /**
-     * maximum bestimmen.
+     *  maximum bestimmen.
      * @param a ertse int wert.
      * @param b zweite int wert
      * @return gibt das maximum zurück.

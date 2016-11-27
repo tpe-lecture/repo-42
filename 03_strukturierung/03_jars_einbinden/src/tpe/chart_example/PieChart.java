@@ -14,7 +14,7 @@ import org.jfree.data.general.DefaultPieDataset;
 public final class PieChart {
 
     /**
-     * Konstruktor.
+     *  Konstruktor.
      */
     private PieChart() {
         // keine Objekte benötigt.
