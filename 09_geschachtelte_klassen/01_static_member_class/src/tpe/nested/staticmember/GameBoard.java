@@ -23,7 +23,7 @@ public class GameBoard extends Board {
 /**
  * Ein Alien.
  */
-    public class Alien extends AnimatedSprite {
+    public static class Alien extends AnimatedSprite {
 
     /** Geschwindigkeit des Alien X-Richtung. */
         private static final int ALIEN_SPEED = 2;
