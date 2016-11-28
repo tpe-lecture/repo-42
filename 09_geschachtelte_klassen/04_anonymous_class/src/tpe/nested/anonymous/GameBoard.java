@@ -31,10 +31,8 @@ public class GameBoard extends Board {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
-                int x = e.getX();
-                int y = e.getY();
-                Point p = new Point(x, y);
-                if (!(alien.intersects(p))) {
+
+                if (!(alien.intersects(e.getPoint()))) {
                     alien.explode();
                 }
                 }
