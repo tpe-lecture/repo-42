@@ -1,16 +1,33 @@
-// TODO: JavaDoc
+/**
+ * Das ist ist eine Klasse die das Wechselkurz zum Dollar rechnet.
+ * @author Anouar
+ *
+ */
 public class Waehrung {
-
-    // TODO: JavaDoc
+    /**
+     * deklaration vom kurs
+     * das nach der initialisierung nicht mehr verändert werden kann
+     * und ist nur für diese klasse sichtbar.
+     */
     private final int kurs;
 
-    // TODO: JavaDoc
+    /**
+     * deklaration von der Name der Währung
+     * die  nach der initialisierung nicht mehr verändert werden kann
+     * und ist nur für diese klasse sichtbar.
+     */
     private final String name;
-
-    // TODO: JavaDoc
+    /**
+     * deklaration von der Kuerzel der Währung
+     * die nach der initialisierung nicht mehr verändert werden kann
+     * und ist nur für diese klasse sichtbar.
+     */
     private final String kuerzel;
-
-    // TODO: JavaDoc
+    /**
+     * initialisierung  der Teiler.
+     * der nicht mehr verändert werden kann
+     * und ist damit als konstante definiert
+     */
     private static final long TEILER = 10000;
 
     /**
@@ -26,22 +43,36 @@ public class Waehrung {
         this.kuerzel = kuerzel;
     }
 
-    // TODO: JavaDoc
+    /**
+     * rechnet die Währung um.
+     * @param betrag betrag der umgerechnet wird
+     * @param toWaehrung zu welsche währung wird umgerechnet
+     * @return gibt der umgerechente betrag zurück
+     */
     public long umrechnen(long betrag, Waehrung toWaehrung) {
         return betrag * kurs / toWaehrung.kurs;
     }
 
-    // TODO: JavaDoc
+    /**
+     *
+     * @return gibt der wechsel kurs zum Dollar zurück.
+     */
     public int getKurs() {
         return kurs;
     }
-    
-    // TODO: JavaDoc
+
+    /**
+     *
+     * @return gibt die Name der Währung zurück.
+     */
     public String getName() {
         return name;
     }
 
-    // TODO: JavaDoc
+    /**
+     *
+     * @return gibt das kürzel der Währung zurück.
+     */
     public String getKuerzel() {
         return kuerzel;
     }
