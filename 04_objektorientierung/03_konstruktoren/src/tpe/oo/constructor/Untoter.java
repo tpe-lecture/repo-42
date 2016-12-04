@@ -3,7 +3,9 @@ package tpe.oo.constructor;
 /**
  * Untoter aus der Horde.
  */
-public class Untoter /* extends Wesen */ {
+public class Untoter extends Wesen {
+
+
 
     /** Standardmäßige Stärke der Fähigkeit zur Unterwasseratmung. */
     public static final int STANDARD_UNTERWASSERATMUNG = 10;
@@ -11,8 +13,15 @@ public class Untoter /* extends Wesen */ {
     /** Fähigkeit zur Atmung unter Wasser. */
     private int unterwasseratmung;
 
-    // Konstruktoren fehlen. Bitte hier einfügen.
+    public Untoter(String name) {
+        super(name);
+        this.unterwasseratmung = STANDARD_UNTERWASSERATMUNG;
+    }
 
+    public Untoter(String name , int atmung){
+        this(name);
+        this.unterwasseratmung = atmung;
+    }
     /**
      * Fähigkeit zur Unterwasseratmnung.
      *
