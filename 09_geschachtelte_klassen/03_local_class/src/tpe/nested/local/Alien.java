@@ -37,5 +37,6 @@ public class Alien extends AnimatedSprite {
         setImages(new AnimatedImage(20,
                 new StripedImage("assets/explosion_1.png", 43)));
         setInvisibleAfterFrames(70);
+        
     }
 }
